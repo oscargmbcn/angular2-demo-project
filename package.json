@@ -1,20 +1,3 @@
-# Angular 2
-
-Seguirem el tutorial d'Angular2 que hi ha a la seva web:
-    https://angular.io/docs/ts/latest/quickstart.html
-
-Per defecte Cloud9 utilitza node v4.4.5 i npm v2.15.5, cal pujar la versió.
-Com utilitzem nvm podem fer:
-
-```
-nvm install 6
-```
-
-ens baixa la darrera versió 6 i ens quedem amb `node v6.2.2` i `npm v3.9.5`.
-
-Creem el `package.json` amb el contingut per la demo:
-
-```
 {
   "name": "angular2-demo",
   "version": "1.0.0",
@@ -53,10 +36,3 @@ Creem el `package.json` amb el contingut per la demo:
     "typings":"^1.0.4"
   }
 }
-```
-
-Ara ja podem fer un `npm install` i ho instal·larà tot.
-
-Crearem una carpeta `app` que representa la nostra aplicació i que la cridarem
-des de la pàgina html.
-
