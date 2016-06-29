@@ -56,6 +56,7 @@ Creem el `package.json` amb el contingut per la demo:
 ```
 
 Ara ja podem fer un `npm install` i ho instal·larà tot.
+A banda caldrà fer `npm run typings install` ja que no ho fa sol.
 
 Crearem una carpeta `app` que representa la nostra aplicació i que la cridarem
 des de la pàgina html.
