@@ -85,3 +85,19 @@ des de la pàgina html.
 ```
 
 Poses les rutes relatives al `index.html` que utilitzes per arrancar.
+
+## Sintàxi especial angular
+- Quan vols que una directiva (en el HTML) apliqui no només a aquella línia sino a tot el que conté s'utilitza `*`.
+  - P.e. `*ngFor` o `*ngIf`.
+  - `<li *ngFor="let hero of heroes" ...`
+  - `<div *ngIf="hero">`
+- Per indicar que una propietat o similar està lligada però de fora cap al teu component ho fas amb `[xxx]`.
+  - P.e. `[class.selected]="hero === selectedHero"`
+- Per indicar un event que es lliga a una funció ho fas com `(xxx)`.
+  - P.e. `(click)="onSelect(hero)"` això farà que quan facis click es cridi a la funció establerta.
+- Per indicar que una propietat o similar està lligada en les dues direccions ho fas amb `[(xxxx)]`.
+  - P.e. `<input [(ngModel)]="hero.name" ...`
+
+## Directives
+- Si la teva app utilitza una directiva (p.e. un altre component) cal indicar-ho al camp directives del component.
+- P.e. `directives: [HeroDetailComponent]`
