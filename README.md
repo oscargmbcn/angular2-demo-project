@@ -95,7 +95,7 @@ Poses les rutes relatives al `index.html` que utilitzes per arrancar.
   - P.e. `[class.selected]="hero === selectedHero"`
 - Per indicar un event que es lliga a una funció ho fas com `(xxx)`.
   - P.e. `(click)="onSelect(hero)"` això farà que quan facis click es cridi a la funció establerta.
-- Per indicar que una propietat o similar està lligada en les dues direccions ho fas amb `[(xxxx)]`.
+- Per indicar que una propietat o similar està lligada en les dues direccions ho fas amb `[(xxxx)]`. Això per exemple per si vols que la modificació d'un `input` modifiqui el model.
   - P.e. `<input [(ngModel)]="hero.name" ...`
 
 ## Directives
