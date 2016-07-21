@@ -1,10 +1,10 @@
 <div *ngIf="hero">
-    <hr/>
+    <hr class="hero-separator" />
     <h2>{{hero.name}} details!</h2>
-    <div class="heroes-line">
+    <div class="hero-line">
         <label class="badge">id: </label>{{hero.id}}
     </div>
-    <div class="heroes-line">
+    <div class="hero-line">
         <label class="badge">name: </label><input [(ngModel)]="hero.name" placeholder="name" />
     </div>
 </div>
