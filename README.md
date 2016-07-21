@@ -71,3 +71,17 @@ des de la pàgina html.
 - 
        |
 -=====-+
+
+## Compilar ts
+`npm run tsc` - Compila el .ts en .js
+
+## Posar el HTML i CSS en fitxers separats
+```
+@Component({
+  selector: 'my-app',
+  templateUrl: 'app/app.component.html',
+  styleUrls: ['app/app.component.css']
+})
+```
+
+Poses les rutes relatives al `index.html` que utilitzes per arrancar.
