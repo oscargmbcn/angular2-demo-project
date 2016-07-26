@@ -109,4 +109,12 @@ Poses les rutes relatives al `index.html` que utilitzes per arrancar.
 - P.e. `function (users) { return users[0]; }` es pot resumir com `users => users[0]`.
 - P.e. `function (err) { log(err.stack); }` es pot resumir com `err => log(err.stack)`.
 - Quan no retornes res ho poses i prou, si retornes quelcom ho poses i prou.
-- 
+
+## Sintàxi de retorn
+- En les funcions tant en el retorn com en els paràmetres pots informar el tipus.
+- P.e. `onSelect(hero: Hero) : void`.
+- P.e. `getHeroes() : Promise<Hero[]>`.
+
+## Sintàxi de variables
+- Les variables es declaren amb `let` i es pot posar el tipus.
+- P.e. `let wRetardedPromise : Promise<Hero[]>`.
