@@ -101,3 +101,12 @@ Poses les rutes relatives al `index.html` que utilitzes per arrancar.
 ## Directives
 - Si la teva app utilitza una directiva (p.e. un altre component) cal indicar-ho al camp directives del component.
 - P.e. `directives: [HeroDetailComponent]`
+- 
+## Arrow functions
+- Serveixen per utilitzar el `this` del scope en que estàs i no el de la funció en la que estàs.
+- També serveixen per simplificar el codi.
+- P.e. `function (user, verifiedToken) { return verifiedToken; }` es pot resumir com `(user, verifiedToken) => verifiedToken`.
+- P.e. `function (users) { return users[0]; }` es pot resumir com `users => users[0]`.
+- P.e. `function (err) { log(err.stack); }` es pot resumir com `err => log(err.stack)`.
+- Quan no retornes res ho poses i prou, si retornes quelcom ho poses i prou.
+- 
