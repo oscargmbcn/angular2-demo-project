@@ -29,7 +29,8 @@ export class AppComponent implements OnInit {
 
   getHeroes()
   {
-    this.heroes = this.heroService.getHeroes();
+    //this.heroes = this.heroService.getHeroes();
+    this.heroService.getHeroes().then(rHeroes => this.heroes = rHeroes);
   }
   
   ngOnInit()
