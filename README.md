@@ -118,3 +118,8 @@ Poses les rutes relatives al `index.html` que utilitzes per arrancar.
 ## Sintàxi de variables
 - Les variables es declaren amb `let` i es pot posar el tipus.
 - P.e. `let wRetardedPromise : Promise<Hero[]>`.
+
+## Cross-site
+- En un browser les peticions han d'anar al mateix servidor [https://en.wikipedia.org/wiki/Same-origin_policy]
+- CORS - Cross-origin resource sharing [https://en.wikipedia.org/wiki/Cross-origin_resource_sharing]
+- JSONP - JSON with Padding [https://en.wikipedia.org/wiki/JSONP]
