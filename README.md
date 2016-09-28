@@ -61,6 +61,7 @@ A banda caldrà fer `npm run typings install` ja que no ho fa sol.
 Crearem una carpeta `app` que representa la nostra aplicació i que la cridarem
 des de la pàgina html.
 
+```
 +-=====-
 |
 - Module bundler
@@ -71,6 +72,7 @@ des de la pàgina html.
 -
        |
 -=====-+
+```
 
 ## Compilar ts
 `npm run tsc` - Compila el .ts en .js
@@ -78,7 +80,7 @@ des de la pàgina html.
 `npm run tsc:w` - Compila i revisa si hi ha canvis per compilar de nou
 
 ## Activar el servidor de proves
-`npm run lite` - Aixecar pel port 3000 el servidor de proves
+`npm run lite` - Aixeca pel port 3000 el servidor de proves
 
 ## Posar el HTML i CSS en fitxers separats
 ```
@@ -106,7 +108,7 @@ Poses les rutes relatives al `index.html` que utilitzes per arrancar.
 ## Directives
 - Si la teva app utilitza una directiva (p.e. un altre component) cal indicar-ho al camp directives del component.
 - P.e. `directives: [HeroDetailComponent]`
--
+
 ## Arrow functions
 - Serveixen per utilitzar el `this` del scope en que estàs i no el de la funció en la que estàs.
 - També serveixen per simplificar el codi.
