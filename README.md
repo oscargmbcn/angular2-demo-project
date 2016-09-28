@@ -74,6 +74,7 @@ des de la pàgina html.
 
 ## Compilar ts
 `npm run tsc` - Compila el .ts en .js
+
 `npm run tsc:w` - Compila i revisa si hi ha canvis per compilar de nou
 
 ## Activar el servidor de proves
