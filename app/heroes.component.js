@@ -9,37 +9,34 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var hero_detail_component_1 = require('./hero-detail.component');
-var heroes_component_1 = require('./heroes.component');
 var hero_service_1 = require('./hero.service');
-var AppComponent = (function () {
-    function AppComponent(heroService) {
+var HeroesComponent = (function () {
+    function HeroesComponent(heroService) {
         this.heroService = heroService;
-        this.title = 'Tour of Heroes';
     }
-    AppComponent.prototype.onSelect = function (hero) {
+    HeroesComponent.prototype.onSelect = function (hero) {
         this.selectedHero = hero;
     };
-    AppComponent.prototype.getHeroes = function () {
+    HeroesComponent.prototype.getHeroes = function () {
         var _this = this;
         //this.heroes = this.heroService.getHeroes();
         //this.heroService.getHeroes().then(rHeroes => this.heroes = rHeroes);
         this.heroService.getHeroesSlowly().then(function (rHeroes) { return _this.heroes = rHeroes; });
     };
-    AppComponent.prototype.ngOnInit = function () {
+    HeroesComponent.prototype.ngOnInit = function () {
         this.getHeroes();
     };
-    AppComponent = __decorate([
+    HeroesComponent = __decorate([
         core_1.Component({
-            selector: 'my-app',
-            templateUrl: 'app/app.component.html',
-            styleUrls: ['app/app.component.css'],
-            directives: [hero_detail_component_1.HeroDetailComponent, heroes_component_1.HeroesComponent],
+            selector: 'my-heroes',
+            templateUrl: 'app/heroes.component.html',
+            styleUrls: ['app/heroes.component.css'],
+            //  directives: [HeroDetailComponent],
             providers: [hero_service_1.HeroService]
         }), 
         __metadata('design:paramtypes', [hero_service_1.HeroService])
-    ], AppComponent);
-    return AppComponent;
+    ], HeroesComponent);
+    return HeroesComponent;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.HeroesComponent = HeroesComponent;
+//# sourceMappingURL=heroes.component.js.map

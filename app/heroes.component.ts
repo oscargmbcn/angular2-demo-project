@@ -2,21 +2,19 @@ import { Component } from '@angular/core';
 import { OnInit } from '@angular/core';
 import { Hero } from './hero';
 import { HeroDetailComponent } from './hero-detail.component';
-import { HeroesComponent } from './heroes.component';
 import { HEROES } from './mock-heroes';
 import { HeroService } from './hero.service';
 
 @Component({
-  selector: 'my-app',
-  templateUrl: 'app/app.component.html',
-  styleUrls: ['app/app.component.css'],
-  directives: [HeroDetailComponent, HeroesComponent],
+  selector: 'my-heroes',
+  templateUrl: 'app/heroes.component.html',
+  styleUrls: ['app/heroes.component.css'],
+//  directives: [HeroDetailComponent],
   providers: [HeroService]
 })
 
-export class AppComponent implements OnInit {
+export class HeroesComponent implements OnInit {
 
-  title = 'Tour of Heroes';
   selectedHero: Hero;
 
   constructor(private heroService: HeroService) { }
