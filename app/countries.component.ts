@@ -7,7 +7,7 @@ import { CountryService } from './country.service';
 @Component({
   selector: 'my-countries',
   templateUrl: 'app/countries.component.html',
-    styleUrls: ['app/countries.component.css']
+  styleUrls: ['app/countries.component.css'],
   providers: [CountryService]
 })
 
